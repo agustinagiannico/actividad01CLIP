@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <style>
+      .icon {
+        width: 30px;
+        height: 30px;
+      }
+      #imgContacto {
+        width: 470px;
+        height: 470px;
+        float: left;
+        padding-top: 50px;
+      }
+    </style>
     <title>Contacto</title>
-</head>
-<body>
-        <div id="nav">
-                <img src="img/logo.jpg" id="logo" alt="logo-fh" />
-                <ul>
-                  <li><a href="index.html">Inicio</a></li>
-                  <li><a href="https://friashermanas.mitiendanube.com/">Tienda</a></li>
-                  <li><a href="nosotras.html">Nosotras</a></li>
-                  <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-              </div>
-</body>
+  </head>
+  <body>
+    <div id="nav">
+      <img src="img/logo.jpg" id="logo" alt="logo-fh" />
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="https://friashermanas.mitiendanube.com/">Tienda</a></li>
+        <li><a href="lineas.html">Líneas</a></li>
+        <li><a href="nosotras.html">Nosotras</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <img src="img/img3.jpg" id="imgContacto">
+    <div class="contacto">
+      <h3 class="contactanos">¡Contactanos!</h3>
+      <h4 class="contactanos">Escribinos tu consulta</h4>
+      <form>
+        <div class="form-group">
+          <label>Nombre</label><br />
+          <input type="text" required /><br />
+          <small>Debe completar este campo con su nombre</small><br />
+        </div>
+
+        <div class="form-group">
+          <label>E-mail</label><br />
+          <input type="text" required /><br />
+          <small>Debe completar este campo con su e-mail</small><br />
+        </div>
+        <div class="form-group">
+          <label>Mensaje</label><br />
+          <textarea name="message" rows="5" cols="40" required> </textarea
+          ><br />
+          <small>Debe completar este campo con el mensaje</small><br />
+        </div>
+       <button type="submit">
+          Enviar
+        </button>
+      </form>
+    </div>
+    <div id="footer">
+      <ul class="footer">
+        <li><img src="img/instagram.svg" class="icon" /></li>
+        <li><img src="img/facebook.svg" class="icon" /></li>
+      </ul>
+    </div>
+  </body>
 </html>

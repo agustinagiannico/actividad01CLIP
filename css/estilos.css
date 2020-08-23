@@ -72,3 +72,60 @@ margin-top: 60px;
 #parrafo2 {
 padding: 10px 20px 10px 500px;
 }
+.tabla{
+  text-align: center;
+}
+th, td {
+  padding: 15px;
+  color: #5e5e5e;
+  border-bottom: 1px solid #ddd;
+}
+table {
+  border-spacing: 5px;
+  margin-left: 150px;
+}
+#t01 th {
+  background-color: #b82327 ;
+  color: white;
+}
+
+.contacto{
+ padding: 50px 50px 50px 100px;
+ width: 710px;
+margin-left: 400px;
+}
+.form-group{
+  padding: 10px;
+}
+.contactanos{
+  margin: 0;
+  text-align: left;
+  padding-bottom: 10px;
+}
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+textarea {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+button {
+  background-color:  #b82327;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  margin-right: 147px;
+}
+button:hover {
+  background-color: #5e5e5e;;
+}
+small{
+  font-style: italic;
+}
