@@ -88,7 +88,9 @@ table {
   background-color: #b82327 ;
   color: white;
 }
-
+.t03{
+  font-weight: normal;
+}
 .contacto{
  padding: 50px 50px 50px 100px;
  width: 710px;
