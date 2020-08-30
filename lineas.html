@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
     <style>
       .icon {
@@ -18,53 +20,122 @@
     <title>Líneas</title>
   </head>
   <body>
-    <div id="nav">
-      <img src="img/logo.jpg" id="logo" alt="logo-fh" />
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="https://friashermanas.mitiendanube.com/">Tienda</a></li>
-        <li><a href="lineas.html">Líneas</a></li>
-        <li><a href="nosotras.html">Nosotras</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </div>
-    <div class="tabla" style="overflow-x:auto;">
-      <h3>Nuestras líneas</h3>
-      <table>
-        
-        <tr id="t01">
-          <th>Líneas</th>
-          <th>Descripción</th>
-          <th>Productos</th>
-        </tr>
-        <tr>
-          <th class="t02">Línea Cama</th>
-          <th class="t03">Nuestras sabanas están realizadas en puro genero de algodón, con la filosofía de que el blanco en el color, invita al descanso y al placer del sueño. el toque de color lo realizamos a través de una guarda bordada con hilos franceses puramente a mano. los diseños son exclusivos y personalizados, tanto en sus medidas, genero, y diseño en su bordado.</th>
-          <th><img src="img/cama.jpg" class="imgLineas" /></th>
-        </tr>
-        <tr>
-          <th class="t02">Línea Mesa</th>
-          <th class="t03">Manteles, caminos de mesa, set de cocina y detalles de buen gusto para mimar a las cheff de nuestro hogar. Los géneros mas usados en FH son: linos italianos, bull y para la linea institucional: telas inífugas y mezcla para una mejor función.</th>
-          <th><img src="img/mesa.jpg" class="imgLineas" /></th>
-        </tr>
-        <tr>
-          <th class="t02">Línea Baño</th>
-          <th class="t03"> Nuestras toallas de puro algodón (480grs), nos hacen sentir que estamos en un spa; por su absorción y generosas medidas. Nuestras batas; con corte de sastrería, costuras reforzadas y terminación francesa son el producto fuerte para mimarse o mimar a la hora de regalar exclusividad y calidad, con el detalle de personalizar con la inicial bordada al agasajado.</th>
-          <th><img src="img/baño.jpg" class="imgLineas" /></th>
-        </tr>
-        <tr>
-          <th class="t02">Línea Bebé</th>
-          <th class="t03">Cuidamos la pielcita de los bebés con algodón hipoalergénico en nuestros productos,Unas buenas sábanas que permiten respirar la piel es el primer paso para enseñarles y acompañar sus sueños.</th>
-          <th><img src="img/bebe.jpg" class="imgLineas" /></th>
-        </tr>
-      </table>
-    </div>
+      <div class="conteiner">
+          <nav class="navbar navbar-expand-lg navbar-light navbar-white bg-white" >
+            <a class="navbar-brand ml-2">
+                <img src="img/logo.jpg" width="40px" height="40px" alt="logo-fh" />
+            </a>
+              <button class="navbar-toggler navbar-toggler-right" data-target="#menu" data-toggle="collapse" type="button" aria-controls="menu" aria-expanded="false" aria-label="Toggle Navegacion">
+                <span class="navbar-toggler-icon"></span> 
+              </button>
+              <div class="collapse navbar-collapse text-center" id="menu">
+                <ul class="navbar-nav mr-auto ml-auto">
+                   <li class="nav-item">
+                     <a href="index.html" class="nav-link">Inicio</a>
+                   </li>
+                   <li class="nav-item">
+                      <a href="https://friashermanas.mitiendanube.com/" class="nav-link">Tienda</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="lineas.html" class="nav-link">Líneas</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="nosotras.html" class="nav-link">Nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                          </li>
+                </ul>
+                <div class="d-flex flex-row justify-content-around">
+                    <ul class="nav">
+                      <li class="nav-item mr-2"><a href="https://www.instagram.com/fhdisenotextil/?hl=es-la"><img src="img/instagram.svg" class="icon" /></a></li>
+                      <li class="nav-item"><a href="https://www.facebook.com/BlanqueriaFH/"><img src="img/facebook.svg" class="icon" /></a></li>
+                    </ul>
+                  </div>
+              </div>
+            </nav>
+          </div>
+    <div class="container">
+      <div class="row"> 
+          <div class="col-sm-12 text-center">
+              <h4 class="display-4">¡Disfrutalas!</h4>
+            </div>
+        <div class="col-sm-12">
+          <div class="pad">
+            <h3 class="display-5 text-center">Nuestras líneas</h3>
+          </div>
+        </div>
+        <div class="container">
+          <div class="table-responsive">
+              <table class="table table-bordered table-hover">
+                <tr id="t01">
+                  <th scope="col">Línea</th>
+                  <th>Descripción</th>
+                  <th>Productos</th>
+                </tr>
+                <tr>
+                  <th class="t02">Cama</th>
+                  <th class="t03">
+                    Nuestras sabanas están realizadas en puro genero de algodón,
+                    con la filosofía de que el blanco en el color, invita al
+                    descanso y al placer del sueño. el toque de color lo
+                    realizamos a través de una guarda bordada con hilos
+                    franceses puramente a mano. los diseños son exclusivos y
+                    personalizados, tanto en sus medidas, genero, y diseño en su
+                    bordado.
+                  </th>
+                  <th>
+                    <img src="img/cama.jpg" class="imgLineas" />
+                  </th>
+                </tr>
+                <tr>
+                  <th class="t02">Mesa</th>
+                  <th class="t03">
+                    Manteles, caminos de mesa, set de cocina y detalles de buen
+                    gusto para mimar a las cheff de nuestro hogar. Los géneros
+                    mas usados en FH son: linos italianos, bull y para la linea
+                    institucional: telas inífugas y mezcla para una mejor
+                    función.
+                  </th>
+                  <th>
+                    <img src="img/mesa.jpg" class="imgLineas" />
+                  </th>
+                </tr>
+                <tr>
+                  <th class="t02">Baño</th>
+                  <th class="t03">
+                    Nuestras toallas de puro algodón (480grs), nos hacen sentir
+                    que estamos en un spa; por su absorción y generosas medidas.
+                    Nuestras batas; con corte de sastrería, costuras reforzadas
+                    y terminación francesa son el producto fuerte para mimarse o
+                    mimar a la hora de regalar exclusividad y calidad, con el
+                    detalle de personalizar con la inicial bordada al agasajado.
+                  </th>
+                  <th>
+                    <img src="img/baño.jpg" class="imgLineas" />
+                  </th>
+                </tr>
+                <tr>
+                  <th class="t02">Bebé</th>
+                  <th class="t03">
+                    Cuidamos la pielcita de los bebés con algodón hipoalergénico
+                    en nuestros productos,Unas buenas sábanas que permiten
+                    respirar la piel es el primer paso para enseñarles y
+                    acompañar sus sueños.
+                  </th>
+                  <th>
+                    <img src="img/bebe.jpg" class="imgLineas" />
+                  </th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+   
 
-    <div id="footer">
-      <ul class="footer">
-        <li><img src="img/instagram.svg" class="icon" /></li>
-        <li><img src="img/facebook.svg" class="icon" /></li>
-      </ul>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>

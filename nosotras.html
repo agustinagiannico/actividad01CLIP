@@ -4,52 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
     <style>
-      .icon{width: 30px; height: 30px;}
-      </style>
+      .icon {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
     <title>Nosotras</title>
   </head>
   <body>
-    <div id="nav">
-      <img src="img/logo.jpg" id="logo" alt="logo-fh" />
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="https://friashermanas.mitiendanube.com/">Tienda</a></li>
-        <li><a href="lineas.html">Líneas</a></li>
-        <li><a href="nosotras.html">Nosotras</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+      <div class="conteiner">
+          <nav class="navbar navbar-expand-lg navbar-light navbar-white bg-white" >
+            <a class="navbar-brand ml-2">
+                <img src="img/logo.jpg" width="40px" height="40px" alt="logo-fh" />
+            </a>
+              <button class="navbar-toggler navbar-toggler-right" data-target="#menu" data-toggle="collapse" type="button" aria-controls="menu" aria-expanded="false" aria-label="Toggle Navegacion">
+                <span class="navbar-toggler-icon"></span> 
+              </button>
+              <div class="collapse navbar-collapse text-center" id="menu">
+                <ul class="navbar-nav mr-auto ml-auto">
+                   <li class="nav-item">
+                     <a href="index.html" class="nav-link">Inicio</a>
+                   </li>
+                   <li class="nav-item">
+                      <a href="https://friashermanas.mitiendanube.com/" class="nav-link">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="lineas.html" class="nav-link">Líneas</a>
+                      </li>
+                      <li class="nav-item active">
+                          <a href="nosotras.html" class="nav-link">Nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                          </li>
+                </ul>
+                <div class="d-flex flex-row justify-content-around">
+                    <ul class="nav">
+                      <li class="nav-item mr-2"><a href="https://www.instagram.com/fhdisenotextil/?hl=es-la"><img src="img/instagram.svg" class="icon" /></a></li>
+                      <li class="nav-item"><a href="https://www.facebook.com/BlanqueriaFH/"><img src="img/facebook.svg" class="icon" /></a></li>
+                    </ul>
+                  </div>
+              </div>
+            </nav>
+          </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-12 text-center">
+                <h4 class="display-4">¡Conocenos!</h4>
+              </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="pad">
+          <img src="img/2img.jpg" class="img-fluid" id="img2" />
+        </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="pad">
+            <h5 class="display-5">Sobre nosotras</h5>
+          </div>
+          <p class="text-muted">
+            Somos tres hermanas que desde el año 2005 decidimos formar este
+            emprendimiento pensado para el bienestar de nuestro cuerpo y nuestra
+            mente. <br /><br />Creemos en la calidez de las telas de algodón y
+            en sus propiedades para el cuerpo, por eso confeccionamos sábanas y
+            toallas de géneros nobles. Valoramos profundamente los materiales
+            naturales para nuestros productos tejidos y bordados, por eso usamos
+            lana 100% lana e hilos de algodón.<br />
+            Amamos los bordados heredados de abuelas pero los transformamos en
+            un valor contemporáneo que dinamiza el pasado con el presente.
+            Confeccionamos generosamente nuestras piezas, exclusivas,
+            artesanales y a medida con terminaciones y tipos de costura muy
+            minuciosos. Cuidamos cada detalle para que entre a tu casa un
+            producto para compartir, un producto para relajarte, para descansar.
+            Es en nuestro descanso y en los momentos compartidos donde se tejen
+            los sueños y nos encanta acompañalos!
+            <br /><br />
+            <b
+              >Somos Frías Hermanas y hacemos Diseño textil <br /><br />
+              Andrea, Karina y Romina Frías</b
+            >
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="principal">
-      <img src="img/2img.jpg" id="img2" />
-      <h3>Sobre nosotras</h3>
-      <p id="parrafo2">
-        Somos tres hermanas que desde el año 2005 decidimos formar este
-        emprendimiento pensado para el bienestar de nuestro cuerpo y nuestra
-        mente. <br /><br />Creemos en la calidez de las telas de algodón y en
-        sus propiedades para el cuerpo, por eso confeccionamos sábanas y toallas
-        de géneros nobles. Valoramos profundamente los materiales naturales para
-        nuestros productos tejidos y bordados, por eso usamos lana 100% lana e
-        hilos de algodón.<br />
-        Amamos los bordados heredados de abuelas pero los transformamos en un
-        valor contemporáneo que dinamiza el pasado con el presente.
-        Confeccionamos generosamente nuestras piezas, exclusivas, artesanales y
-        a medida con terminaciones y tipos de costura muy minuciosos. Cuidamos
-        cada detalle para que entre a tu casa un producto para compartir, un
-        producto para relajarte, para descansar. Es en nuestro descanso y en los
-        momentos compartidos donde se tejen los sueños y nos encanta
-        acompañalos!
-        <br /><br />
-        <b>Somos Frías Hermanas y hacemos Diseño textil <br /><br />
-        Andrea, Karina y Romina Frías</b>
-      </p>
-    </div>
-    <div id="footer">
-      <ul class="footer">
-          <li><img src="img/instagram.svg" class="icon"></li>
-          <li><img src="img/facebook.svg" class="icon"></li>
-      </ul>
-    </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
