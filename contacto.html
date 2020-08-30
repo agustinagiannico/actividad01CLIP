@@ -59,27 +59,30 @@
       <div class="pad">
       <h5 class="display-5">Escribinos tu consulta</h5>
     </div>
-      <form>
-      
+      <form class="was-validated">
         <div class="form-group ">
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control form-control-sm" id="nombre" aria-describedby="nombreAyuda" required>
-            <small id="nombreAyuda" class="form-text text-muted">Debe completar este campo con su nombre.</small>
+            <input name="nombre" type="text" class="form-control form-control-sm" id="nombre"  placeholder="Escriba aquí su nombre"  required>
+            <div class="valid-feedback">¡Válido!</div>
+            <div class="invalid-feedback">Porfavor, complete el campo.</div>
           </div>
           <div class="form-group ">
               <label for="apellido">Apellido</label>
-              <input type="text" class="form-control form-control-sm" id="apellido" aria-describedby="apellidoAyuda" required>
-              <small id="apellidoAyuda" class="form-text text-muted">Debe completar este campo con su apellido.</small>
+              <input type="text" class="form-control form-control-sm" id="apellido"  placeholder="Escriba aquí su apellido" required>
+              <div class="valid-feedback">¡Válido!</div>
+              <div class="invalid-feedback">Porfavor, complete el campo.</div>
             </div>
         <div class="form-group ">
             <label for="email">E-mail</label>
-            <input type="email" class="form-control form-control-sm" id="email" aria-describedby="emailAyuda" required>
-            <small id="emailAyuda" class="form-text text-muted">Debe completar este campo con su email.</small>
+            <input type="email" class="form-control form-control-sm" id="email" placeholder="Escriba aquí su e-mail" required>
+            <div class="valid-feedback">¡Válido!</div>
+            <div class="invalid-feedback">Porfavor, complete el campo.</div>
           </div>
           <div class="form-group">
               <label for="mensaje">Mensaje</label>
-              <textarea class="form-control form-control-sm"  id="mensaje" rows="3"></textarea aria-describedby="msj" required>
-              <small id="msjAyuda" class="form-text text-muted">Debe completar este campo con su email.</small>
+              <textarea class="form-control form-control-sm"  id="mensaje" rows="3" placeholder="Escriba aquí su mensaje" required></textarea>
+              <div class="valid-feedback">¡Válido!</div>
+              <div class="invalid-feedback">Porfavor, complete el campo.</div>
             </div>
     
        <button type="submit" class="btn btn-secondary">
