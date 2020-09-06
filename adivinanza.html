@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/bootstrap.css" />
-
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
     <style>
       .icon {
@@ -13,7 +12,7 @@
         height: 30px;
       }
     </style>
-    <title>Nosotras</title>
+    <title>Adivinanza</title>
   </head>
   <body>
     <div class="conteiner">
@@ -45,13 +44,13 @@
             <li class="nav-item">
               <a href="lineas.html" class="nav-link">Líneas</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a href="nosotras.html" class="nav-link">Nosotras</a>
             </li>
             <li class="nav-item">
               <a href="contacto.html" class="nav-link">Contacto</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">¡25%off!</a>
               <div class="dropdown-menu">
                 <a href="adivinanza.html" class="dropdown-item">Adivinanza</a>
@@ -78,42 +77,45 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h4 class="display-4">¡Conocenos!</h4>
+                <div class="pad">
+          <h4 class="display-4">¡Juguemos!</h4>
+                </div>
         </div>
-        <div class="col-md-6 col-sm-12">
+        <div class="col"></div>
+        <div class="col-md-6 col-sm-12 bg-secondary rounded text-white">
           <div class="pad">
-            <img src="img/2img.jpg" class="img-fluid" id="img2" />
+            <h5 class="display-5 text-center bg-fh">Cupón por 25% off...</h5>
           </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="pad">
-            <h5 class="display-5">Sobre nosotras</h5>
-          </div>
-          <p class="text-muted">
-            Somos tres hermanas que desde el año 2005 decidimos formar este
-            emprendimiento pensado para el bienestar de nuestro cuerpo y nuestra
-            mente. <br /><br />Creemos en la calidez de las telas de algodón y
-            en sus propiedades para el cuerpo, por eso confeccionamos sábanas y
-            toallas de géneros nobles. Valoramos profundamente los materiales
-            naturales para nuestros productos tejidos y bordados, por eso usamos
-            lana 100% lana e hilos de algodón.<br />
-            Amamos los bordados heredados de abuelas pero los transformamos en
-            un valor contemporáneo que dinamiza el pasado con el presente.
-            Confeccionamos generosamente nuestras piezas, exclusivas,
-            artesanales y a medida con terminaciones y tipos de costura muy
-            minuciosos. Cuidamos cada detalle para que entre a tu casa un
-            producto para compartir, un producto para relajarte, para descansar.
-            Es en nuestro descanso y en los momentos compartidos donde se tejen
-            los sueños y nos encanta acompañalos!
-            <br /><br />
-            <b
-              >Somos Frías Hermanas y hacemos Diseño textil <br /><br />
-              Andrea, Karina y Romina Frías</b
-            >
+          <div>
+          <p class="text-white">
+           Después de recorrer nuestra página te una dejamos pregunta, para poner a prueba tu atención.<br>
+           Si la respondés correctamente, obtenés un código de descuento para usar en nuestra tienda online! <br>
+           <br> <strong>¡No olvides que tenés 3 intentos! </strong>
           </p>
+          <button class="btn" data-toggle="collapse" data-target="#pregunta" aria-expanded="false" id="btnEmpezar">Empezar</button>
+        <hr class="my-4">
         </div>
+        <div class="collapse" id="pregunta">
+            
+            <section id="contPregunta" class="container bg-fh ">
+                
+                <div id="question"></div>
+        
+            </section>
+            <div class="pad text-center">
+            <input type="text" class="form-control form-control-lg" id="rta" placeholder="Escriba aquí la respuesta" >
+            </div>
+            <div class="pad text-right">
+            <button type="button" onclick="iniciar()" class="btn ">Intentar</button>
+        </div>
+        </div>
+        </div>
+        <div class="col"></div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"> </script> 
+    <script src="js/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
