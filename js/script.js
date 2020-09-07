@@ -1,31 +1,3 @@
-var intentos=0;
-
-
-    function iniciar()
-    {
-        event.preventDefault();
- 
-        if(intentos >= 4)
-        {
-        swal("¡Perdiste! La respuesta correcta es en 2005");
-        document.getElementById(txtCampo).disabled = true;
-        document.getElementById("intentos")-1;
-        }
-        var resultado = "2005";
-        var usuario = document.getElementById("txtCampo").value;
-        do{
-            if (resultado === usuario) {
-                swal("Felicitaciones! Ganaste un 25% en tu próxima compra! Con el código de descuento: FH2020");  
-            }             
-            else{
-                intentos++;
-                swal("¡Intenta de nuevo! Cuidado que te quedan " + intentos);  
-            }               
-                           
-        }         
-        while(intentos<=4);
-    
-    }
 
     var comenzar = document.querySelector('#btnEmpezar');
 
@@ -40,7 +12,7 @@ var intentos=0;
     })
     
     
-    var intentosTotal = 3;
+   
     var inicioIntentos = 0;
     
     function iniciar() {
